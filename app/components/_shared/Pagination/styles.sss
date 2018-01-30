@@ -1,0 +1,36 @@
+.wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+.item
+  width: 32px
+  min-width: 32px
+  height: 32px
+  border: 1px solid #ddd
+  color: $primary
+  font-size: .9em
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  margin: 5px 0
+  & + &
+    margin-left: -1px
+  &:first-child
+    border-top-left-radius: 5px
+    border-bottom-left-radius: 5px
+  &:last-child
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+  &:hover
+    background-color: #eee
+  &.isActive
+    background-color: $primary
+    border-color: $primary
+    color: #fff
+    cursor: default
+  &[disabled]
+    cursor: not-allowed
+    background-color: #eee
+    color: #999
+    text-shadow: none
