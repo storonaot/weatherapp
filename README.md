@@ -3,7 +3,7 @@ ______________
 
 1. clone repo
 
-2. cd wetherapp
+2. cd weatherapp
 
 3. yarn
 
